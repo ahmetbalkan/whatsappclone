@@ -9,15 +9,46 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_screenutil: ^5.9.0
+  
+  path_provider: ^2.1.1
+  google_fonts: ^6.1.0
+
+  #Router
   go_router: ^11.1.4
+
+  #responsive tools
+  flutter_screenutil: ^5.9.0
+
+  #local db
   isar: ^3.1.0+1
+  
+
+  #State Management
   stacked: ^3.4.1+1
+
+  #Reactive Forms
+  reactive_forms: ^16.1.0
+  reactive_pinput: ^3.0.0
+  reactive_phone_form_field: ^2.0.1
+
+
+  
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  isar_generator: ^3.1.0+1
+  build_runner: ^2.4.6
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/ 
+
+  fonts:
+    - family: Geometria
+      fonts:
+        - asset: assets/fonts/geometria.ttf
+
+

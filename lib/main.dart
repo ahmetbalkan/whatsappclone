@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:whatsappclone/navigation/router.dart';
+import 'package:whatsappclone/config/routes/router.dart';
+import 'package:whatsappclone/config/theme/app_themes.dart';
 
 void main() {
   runApp(const MainApp());
@@ -18,6 +19,8 @@ class MainApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp.router(
             debugShowCheckedModeBanner: false,
+            theme: AppThemes.lightTheme,
+            darkTheme: AppThemes.darkTheme,
             routerConfig: goRouter,
           );
         });
